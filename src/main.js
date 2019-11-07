@@ -1,0 +1,14 @@
+import Vue from 'vue'
+import App from '@/App.vue'
+import router from '@/router'
+import vuetify from '@/plugins/vuetify'
+import inquieryStore from '#/store/inquiry.js'
+
+Vue.config.productionTip = false
+
+new Vue({
+  router,
+  vuetify,
+  render: h => h(App),
+  inquieryStore,
+}).$mount('#app')
